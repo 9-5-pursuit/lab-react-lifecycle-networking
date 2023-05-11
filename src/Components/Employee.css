@@ -27,6 +27,3 @@
   color: white;
   transition: 0.3s all;
 }
-.employee-container {
-  grid-template-rows: max-content;
-}
