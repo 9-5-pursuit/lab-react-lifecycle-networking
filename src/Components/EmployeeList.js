@@ -6,7 +6,7 @@ export const EmployeeList = () => {
   const [employees, setEmployees] = useState([]);
 
   useEffect(() => {
-    fetch(`https://backend-vet-api.onrender.com/api/employees`)
+    fetch(`https://vet-api-1.onrender.com/api/employees`)
       .then((res) => res.json())
       .then((apiData) => {
         setEmployees(apiData);

@@ -7,7 +7,8 @@ export const Employee = ({ employee }) => {
 
   const formatEmployeeName = (employee) => {
     const postFix = employee.postfix ? `,${employee.postfix}` : "";
-    return `${employee.prefix} ${employee.firstName} ${employee.lastName}${postFix}`;
+    return `${employee.prefix} ${employee.firstName} ${employee.lastName}
+    ${postFix}`;
   };
 
   return (
@@ -16,7 +17,7 @@ export const Employee = ({ employee }) => {
       <h4>Staff Member Title {employee.title}</h4>
       <button
         onClick={() => {
-          setShowPets(!showPets)
+          setShowPets(!showPets);
         }}
       >
         Show Pets

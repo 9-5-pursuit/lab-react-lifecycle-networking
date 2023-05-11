@@ -3,9 +3,7 @@ import { useState, useEffect } from "react";
 export const PetList = ({ employeeId }) => {
   const [pets, setPets] = useState([]);
   useEffect(() => {
-    fetch(
-      `https://backend-vet-api.onrender.com/api/pets?employeeId=${employeeId}`
-    )
+    fetch(`https://vet-api-1.onrender.com/api/pets?employeeId=${employeeId}`)
       .then((res) => res.json())
       .then((apiData) => {
         setPets(apiData);
