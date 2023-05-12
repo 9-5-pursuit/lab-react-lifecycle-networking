@@ -1,13 +1,23 @@
 import PetList from "./PetList";
+import {useState} from 'react'
 import "./Employee.css";
 
-export const Employee = () => {
+export const Employee = ({
+  id,
+  firstName, 
+  lastName,
+   prefix, 
+   postfix, 
+   title,
+  }) => {
+    
+   const [showpets, setshowpets] = useState(false)
   return (
     <article className="employee">
-      <h3>Staff Member Name</h3>
-      <h4>Staff Member Title</h4>
-      <button>Show Pets</button>
-      <PetList />
+      <h3>{prefix || ""} {firstName} {lastName} {postfix ? `, ${postfix}`:""}</h3>
+      <h4>{title}</h4>
+      <button onClick={() => setshowpets(!showpets)}> Show Pets</button>
+       {showpets && <PetList employeeId={id} />}
     </article>
   );
 };
