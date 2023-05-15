@@ -22,7 +22,7 @@ In this lab, you will build a simple page that will show all of the employees at
 
 1. Open up the repository in VSCode. Follow the instructions below to complete the Lab.
 
-Your instructor set up the following [API](https://github.com/joinpursuit/resource-veterinarian-api) and give you the URL where to send your requests. 
+Your instructor set up the following [API](https://github.com/joinpursuit/resource-veterinarian-api) and give you the URL where to send your requests.
 
 ### Tests
 
@@ -48,10 +48,10 @@ Keep the following in mind for this lab as you run the tests.
 
 Making use of the existing code, add the following features to the React application. Details about the API you will be accessing are included below.
 
-- [ ] Instead of showing a hardcoded staff member, dynamically build a list of staff members by accessing the external API.
-  - [ ] If the staff member has a `prefix`, like `"Dr."`, include it at the beginning of the name. (E.g. "Dr. Leah Ayers")
-  - [ ] If the staff members has a `postfix`, like `"CVPM"`, include it at the end of the name with a comma. (E.g. "Susan Gallegos, CVPM")
-- [ ] Upon clicking the "Show Pets" button, the name of the pets the staff members sees should be shown below the button.
+- [x] Instead of showing a hardcoded staff member, dynamically build a list of staff members by accessing the external API.
+  - [x] If the staff member has a `prefix`, like `"Dr."`, include it at the beginning of the name. (E.g. "Dr. Leah Ayers")
+  - [x] If the staff members has a `postfix`, like `"CVPM"`, include it at the end of the name with a comma. (E.g. "Susan Gallegos, CVPM")
+- [x] Upon clicking the "Show Pets" button, the name of the pets the staff members sees should be shown below the button.
   - You only need to include the names of the pets as a comma-separated list.
 
 There are multiple ways to accomplish the above goals. The tests should be resilient enough to account for a few different ways.
