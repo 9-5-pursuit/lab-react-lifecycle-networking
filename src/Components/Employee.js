@@ -14,7 +14,7 @@ export const Employee = ({ employee }) => {
   return (
     <article className="employee">
       <h3>{formatEmployeeName(employee)}</h3>
-      <h4>Staff Member Title {employee.title}</h4>
+      <h4>{employee.title}</h4>
       <button
         onClick={() => {
           setShowPets(!showPets);
